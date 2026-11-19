@@ -79,3 +79,13 @@ The value -5 is rejected because it is negative.
 
 For BigBag, each add() increases items by 2.
 After two calls, items becomes 4. Then we add 1, so the result is 5.
+
+
+Real output:
+
+1
+5
+
+Was I right?
+
+Yes, my prediction was correct.
