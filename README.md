@@ -61,3 +61,21 @@ The new keyword is allowed in Dart. It creates an object.
 ### Fixed output
 
 100
+
+
+## Part 5
+
+My prediction:
+
+The output will be:
+
+1
+5
+
+Why?
+
+For Bag, add() increases items to 1.
+The value -5 is rejected because it is negative.
+
+For BigBag, each add() increases items by 2.
+After two calls, items becomes 4. Then we add 1, so the result is 5.
