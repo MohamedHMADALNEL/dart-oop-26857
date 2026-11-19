@@ -40,3 +40,24 @@ Paid 214 RWF
 Owner: Mohamed Hamedalnel | Balance: 1356 RWF
 Student card: 17% off
 ```
+## Part 4: Bug table
+
+
+| Bug | The line | Why it is wrong | My fix |
+|---|---|---|---|
+| 1 | String _brand; and int _battery; | They have no starting values. | Add empty string and zero. |
+| 2 | SmartPhone(String brand, int battery, String system) | It does not call the parent constructor. | Add super(brand, battery). |
+| 3 | @override void restart() | The parent class has no restart method. | Add restart() in Phone. |
+| 4 | Missing battery setter in Phone | We cannot change battery without a setter. | Add a setter from 0 to 100. |
+| 5 | print(p.battery()); | Getter is not a method. | Remove the parentheses. |
+
+
+### Not a bug
+
+Phone p = new Phone('Tecno', 50);
+
+The new keyword is allowed in Dart. It creates an object.
+
+### Fixed output
+
+100
